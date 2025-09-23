@@ -1,0 +1,25 @@
+1. WordPress is a free and open-source system for building websites. 
+It started as a blogging tool but now supports all kinds of sites: like blogs, 
+online stores, forums, and portfolios. It’s one of the most popular platforms in the world,
+built with PHP and uses MySQL for database.
+
+2. WordPress Multisite is a way of adding multiple sites to your WordPress installation. 
+It’s a feature that you can add to your existing or new created WordPress site.
+
+3. A post is one of the two types of content available by default in WordPress.
+Posts are used for publications related to a given date, event or theme. They are mainly used 
+in blogs and news sites.
+
+4. A Page is used for static content, parts that don’t change often, like: About page, Contact page, or Services page.
+
+5. Posts are used for blog content or news updates. They are shown in chronological order and 
+can be organized using categories and tags. Posts appear in feeds, making them easy to share.
+While pages are for static content. They don’t use categories or tags and are not shown in RSS feeds.
+Pages also support custom templates, which posts don’t use.
+
+6. A WordPress plugin is a package of code that can be installed on a 
+WordPress website to add new features or functionality.
+
+7. A shortcode is a formatted text tag that with square brackets and can be placed directly in a post or a 
+page. This tag is automatically interpreted by WordPress and allows you to add 
+features without having to program code. 

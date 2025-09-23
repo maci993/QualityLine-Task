@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time App</title>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="time" placeholder="The time is:" /> <br />
+      <button onclick="showTime()">Show current time:</button>
+      <button onclick="showMessage()">Display message box</button>
+      <button onclick="showFormattedTime()">Show formatted time</button>
+    </div>
+    <script>
+      function showTime() {
+        const now = new Date();
+        let h = String(now.getHours()).padStart(2, "0");
+        let m = String(now.getMinutes()).padStart(2, "0");
+        let s = String(now.getSeconds()).padStart(2, "0");
+        let currentTime = h + ":" + m + ":" + s;
+        document.getElementById("time").value = currentTime;
+      }
+      function showMessage() {
+        alert("Hello world");
+      }
+
+      function showFormattedTime() {
+        let now = new Date();
+        let yyyy = now.getFullYear();
+        let MM = String(now.getMonth() + 1).padStart(2, "0");
+        let dd = String(now.getDate()).padStart(2, "0");
+        let hh = String(now.getHours()).padStart(2, "0");
+        let mm = String(now.getMinutes()).padStart(2, "0");
+        let ss = String(now.getSeconds()).padStart(2, "0");
+        let formatted =
+          yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss;
+        alert(formatted);
+      }
+    </script>
+  </body>
+</html>

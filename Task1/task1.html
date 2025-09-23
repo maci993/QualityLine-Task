@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        document.getElementById("datetime").textContent = now.toLocaleString();
+      }
+      setInterval(updateDateTime, 5000);
+      window.onload = updateDateTime;
+    </script>
+  </head>
+  <body>
+    <div id="datetime"></div>
+    <br />
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Marina</td>
+        <td>Stojanovic</td>
+        <td>+38977754050</td>
+        <td>savicmarina993@gmail.com</td>
+      </tr>
+    </table>
+    <br />
+    <div>
+      <textarea name="textarea" rows="10" cols="63"></textarea>
+    </div>
+    <div class="checkboxes" style="display: flex; gap: 20px">
+      <div>
+        <input type="checkbox" id="male" name="male" checked />
+        <label for="male">Male</label>
+      </div>
+      <div>
+        <input type="checkbox" id="female" name="female" />
+        <label for="female">Female</label>
+      </div>
+    </div>
+    <br />
+    <input type="submit" value="Submit" />
+  </body>
+</html>
