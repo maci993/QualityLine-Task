@@ -6,6 +6,7 @@
     <title>Multiplication Table</title>
     <link rel="stylesheet" href="style2.css">
         <script>
+            //a function to show an alert with the cell value
         function showValue(value) {
             alert("Cell value: " + value);
         }

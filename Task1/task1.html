@@ -9,7 +9,9 @@
         const now = new Date();
         document.getElementById("datetime").textContent = now.toLocaleString();
       }
+      // updateDateTime every 5 seconds
       setInterval(updateDateTime, 5000);
+     // when the page fully loads so the datetime appears immediately
       window.onload = updateDateTime;
     </script>
   </head>

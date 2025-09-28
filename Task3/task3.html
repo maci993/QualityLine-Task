@@ -14,11 +14,12 @@
       <button onclick="showFormattedTime()">Show formatted time</button>
     </div>
     <script>
+      //his function will get the current time and put it inside the input box.
       function showTime() {
         const now = new Date();
         let h = String(now.getHours()).padStart(2, "0");
-        let m = String(now.getMinutes()).padStart(2, "0");
-        let s = String(now.getSeconds()).padStart(2, "0");
+        let m = String(now.getMinutes()).padStart(2, "0"); //Gets the minutes and converts to string and pads to two digits.
+        let s = String(now.getSeconds()).padStart(2, "0"); //padStart ensure two digits
         let currentTime = h + ":" + m + ":" + s;
         document.getElementById("time").value = currentTime;
       }
@@ -26,7 +27,7 @@
         alert("Hello world");
       }
 
-      function showFormattedTime() {
+      function showFormattedTime() { //builds a longer formatted date time string and displays it in an alert.
         let now = new Date();
         let yyyy = now.getFullYear();
         let MM = String(now.getMonth() + 1).padStart(2, "0");
@@ -34,6 +35,7 @@
         let hh = String(now.getHours()).padStart(2, "0");
         let mm = String(now.getMinutes()).padStart(2, "0");
         let ss = String(now.getSeconds()).padStart(2, "0");
+        //build a formatted string like 2025-09-28 14:05:09
         let formatted =
           yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss;
         alert(formatted);

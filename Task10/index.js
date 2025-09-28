@@ -3,11 +3,12 @@ let numbers = [
 ];
 console.log("Original array:", numbers);
 
+//This is Bubble Sort,sorting numbers from smallest to largest.
 for (let i = 0; i < numbers.length; i++) {
   //manual sorting
   for (let j = 0; j < numbers.length - i - 1; j++) {
-    if (numbers[j] > numbers[j + 1]) {
-      let temp = numbers[j];
+    if (numbers[j] > numbers[j + 1]) { 
+      let temp = numbers[j]; //We temporarily store numbers[j] in temp, then replace it with the next number, and finally put temp in the next position.
       numbers[j] = numbers[j + 1];
       numbers[j + 1] = temp;
     }
@@ -21,11 +22,11 @@ console.log("Sorted array:", numbers);
 //]
 
 
-class Sorter {
+class Sorter { //create objects that can sort an array.
   constructor(array) {
     this.numbers = array;
   }
-  sort() {
+  sort() { //create objects that can sort an array.
     for (let i = 0; i < this.numbers.length; i++) {
       for (let j = 0; j < this.numbers.length - i - 1; j++) {
         if (this.numbers[j] > this.numbers[j + 1]) {

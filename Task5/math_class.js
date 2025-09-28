@@ -1,4 +1,5 @@
 class math {
+  // constructor function that runs when you create a new object from the class.
   constructor(a, b) {
     this.A = a;
     this.B = b;
@@ -6,8 +7,10 @@ class math {
 
   // display multiplication table
   displayTable() {
+    //iterates rows (1 through 10).
     for (let i = 1; i <= 10; i++) {
       let row = [];
+      //adds each result to the array.
       for (let j = 1; j <= 10; j++) {
         row.push(i * j);
       }
